@@ -1,0 +1,195 @@
+body {
+  font-family: sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  padding: 0;
+}
+.hidden { display: none !important; }
+#setupPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1.5em;
+}
+#setupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ccc;
+  padding: 2em 2.5em;
+  min-width: 260px;
+}
+#setupForm label {
+  font-size: 1.15em;
+  margin-bottom: 0.3em;
+}
+#setupForm select, #setupForm input {
+  font-size: 1.1em;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 0.7em;
+}
+#setupForm button {
+  font-size: 1.2em;
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  background: #3fa7ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s;
+}
+#setupForm button:active {
+  background: #0072c6;
+}
+#gamePage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.center-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4em;
+  margin-bottom: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.btn-col {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ccc;
+  padding: 1em 1.2em;
+  min-width: 160px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  position: relative;
+  user-select: none;
+}
+.btn-col[disabled] {
+  background: #eee !important;
+  color: #bbb !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  box-shadow: none !important;
+}
+.btn-col:active:not([disabled]) {
+  background: #e0f0ff;
+  box-shadow: 0 1px 4px #aaa;
+}
+#btn-right {
+  transform: rotate(-90deg);
+}
+#btn-left {
+  transform: rotate(90deg);
+}
+.btn {
+  background: #3fa7ff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+  pointer-events: none;
+  user-select: none;
+}
+.rank {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.2em;
+}
+.result {
+  font-size: 0.95em;
+  color: #666;
+  min-height: 1.2em;
+}
+#timeText {
+  font-size: 1.3em;
+  color: #444;
+  text-align: center;
+  margin-top: 1.2em;
+  visibility: hidden;
+}
+.digits { font-size: 1rem; color: #0066cc; margin-top: 0.5em; min-height: 1.2em; }
+#backToSetupBtn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-size: 1em;
+  padding: 0.3em 1em;
+  border-radius: 6px;
+  background: #ddd;
+  color: #444;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+#backToSetupBtn:active {
+  background: #bbb;
+}
+@media (max-width: 600px) {
+  .center-area {
+    gap: 2.5em;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .btn-col {
+    min-width: 140px;
+    min-height: 80px;
+    padding: 0.5em 0.5em;
+    gap: 0.2em;
+    font-size: 0.85em;
+  }
+  .btn {
+    font-size: 0.9em;
+    padding: 0.3em 0.5em;
+    min-width: 60px;
+    max-width: 100%;
+  }
+  .rank, .result, .digits {
+    font-size: 0.85em;
+  }
+  #timeText {
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+  #timeImage {
+    width: 100px !important;
+    height: 100px !important;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  }
+  #backToSetupBtn {
+    font-size: 0.85em;
+    padding: 0.2em 0.7em;
+    top: 6px;
+    left: 6px;
+  }
+}
