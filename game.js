@@ -123,7 +123,9 @@ function createButtons(count) {
     btnCol.appendChild(digitsDiv);
     digitsDivs.push(digitsDiv);
 
-    btnCol.onclick = () => onBtnClick(idx);
+    //btnCol.onclick = () => onBtnClick(idx);
+    btnCol.addEventListener('mousedown',() => onBtnClick(idx));
+    btnCol.addEventListener('touchstart',() => onBtnClick(idx));
     leftCol.appendChild(btnCol);
     btns.push(btnCol);
 
@@ -159,7 +161,9 @@ function createButtons(count) {
     btnCol.appendChild(digitsDiv);
     digitsDivs.push(digitsDiv);
 
-    btnCol.onclick = () => onBtnClick(idx);
+    //btnCol.onclick = () => onBtnClick(idx);
+    btnCol.addEventListener('mousedown',() => onBtnClick(idx));
+    btnCol.addEventListener('touchstart',() => onBtnClick(idx));
     rightCol.appendChild(btnCol);
     btns.push(btnCol);
   }
