@@ -5,6 +5,14 @@ body {
   padding: 0;
 }
 .hidden { display: none !important; }
+
+ .no_select{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
+ 
 #setupPage {
   display: flex;
   flex-direction: column;
