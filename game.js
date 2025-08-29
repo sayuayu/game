@@ -127,15 +127,7 @@ function createButtons(count) {
     leftCol.appendChild(btnCol);
     btns.push(btnCol);
 
-    // ここからイベント追加
-
-    btnCol.addEventListener('mousedown', () => onBtnClick(idx));
-    btnCol.addEventListener('touchstart', (e) => {
-      e.preventDefault(); // スクロール防止
-      onBtnClick(idx);
-    });
-    leftCol.appendChild(btnCol);
-    btns.push(btnCol);
+    
   }
 
   for (let i = 0; i < rightCount; i++) {
@@ -170,17 +162,6 @@ function createButtons(count) {
     btnCol.onclick = () => onBtnClick(idx);
     rightCol.appendChild(btnCol);
     btns.push(btnCol);
-
-    // ここからイベント追加
-
-    btnCol.addEventListener('mousedown', () => onBtnClick(idx));
-    btnCol.addEventListener('touchstart', (e) => {
-      e.preventDefault(); // スクロール防止
-      onBtnClick(idx);
-    });
-    leftCol.appendChild(btnCol);
-    btns.push(btnCol);
-    
   }
 }
 
