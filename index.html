@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>フライング判定付きボタンゲーム</title>
+  <title>刹那の会計</title>
   <link rel="stylesheet" href="game.css">
 </head>
 <body class="no_select">
   <!-- 設定ページ -->
   <div id="setupPage">
-    <h2>フライング判定付きボタンゲーム 設定</h2>
+    <h2>刹那の会計</h2>
     <form id="setupForm">
       <label for="playerCount">人数：</label>
       <select id="playerCount">
@@ -28,7 +28,7 @@
   <!-- ゲームページ -->
   <div id="gamePage" class="hidden">
     <button id="backToSetupBtn">設定画面に戻る</button>
-    <div class="center-area">
+    <div class="center-area"> <!--この上にボタンを覆えるほどの階層を作成し、そのサイズを固定させることでズレを防ぐ or 生成前と生成後のオブジェクトを同じ箱に入れてサイズを固定する-->>
       <div class="col" id="leftCol"></div>
       <div class="time" id="timeText">
         <img id="timeImage" src="time.png" alt="Time Image" style="width: 80px; height: 80px;">
