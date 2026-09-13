@@ -11,6 +11,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -31,6 +32,8 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+
 
 
 /* ==================================================
@@ -802,6 +805,8 @@ body {
 }
 
 
+
+
 .game2-start-button:disabled {
     background:
         #94a3b8;
@@ -858,6 +863,7 @@ body {
 .game2-game-card {
     text-align:
         center;
+    
 }
 
 
@@ -948,7 +954,7 @@ body {
 }
 
 #actionButton {
-  touch-action: manipulation;
+  touch-action: none;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -1227,5 +1233,11 @@ body {
         font-size:
             26px;
     }
+
+    #actionButton {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
 
 }
