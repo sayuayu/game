@@ -1737,10 +1737,9 @@ function startGame2() {
 
 if (actionButton) {
 
-  actionButton.addEventListener(
-    'touchend',
-    executeGame2Action
-  );
+  actionButton.addEventListener('pointerup', () => {
+    executeGame2Action();
+  });
 
 }
 
