@@ -1735,10 +1735,31 @@ function startGame2() {
 // ゲーム2：アクションボタン
 // ============================================================
 
+//スクロールを禁止する関数
+const area = document.getElementById("game2Screen");
+
+//スクロールを禁止する関数
+function ban() {
+
+area.style.overflowY= "hidden";
+}
+
+//禁止を解除する関数
+function lift() {
+
+area.style.overflowY = "auto";
+}
+
+
 if (actionButton) {
+
+  actionButton.addEventListener('pointdown', () => {
+    ban();
+  });
 
   actionButton.addEventListener('pointerup', () => {
     executeGame2Action();
+    lift();
   });
 
 }
