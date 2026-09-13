@@ -1738,7 +1738,7 @@ function startGame2() {
 if (actionButton) {
 
   actionButton.addEventListener(
-    'click',
+    'touchend',
     executeGame2Action
   );
 
