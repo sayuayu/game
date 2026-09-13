@@ -1738,7 +1738,7 @@ function startGame2() {
 if (actionButton) {
 
   actionButton.addEventListener(
-    'mouseup',
+    'pointerup',
     executeGame2Action
   );
 
