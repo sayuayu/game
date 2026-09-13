@@ -784,6 +784,10 @@ body {
 
     transition:
         0.2s;
+
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 
@@ -940,6 +944,12 @@ body {
 
     color:
         #1e293b;
+}
+
+#actionButton {
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 
